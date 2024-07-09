@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+MX:wght@100..400&display=swap');
+
+* {
+    font-family: 'DM Sans';
+}
+:root{
+    --white:#fff;
+    --icn-clr:#007aff;
+    --up-ar:#b1b5d1;
+    --txt-clr:#565353;
+    --grd-wht:#ffffff;
+    --grd-blue:#d6f2ff;
+}
+.bg-img {
+  background-size: cover;
+  min-height: 89.4vh;
+  position: relative;
+}
+.hd{
+  color:var(--white);
+}
+a{
+    text-decoration: none;
+}
+.icon{
+    font-size: 40px;
+    color: var(--icn-clr);
+}
+.break{
+    display: block;
+}
+.card-active{
+    --bs-card-spacer-y: 3.8%;
+    --bs-card-spacer-x: 5%;
+    border-radius: 15px;
+    width: 96%;
+    background-image: linear-gradient(to right, var(--grd-wht) , var(--grd-blue));
+    cursor: pointer;
+}
+.card{
+    --bs-card-spacer-y: 4.1%;
+    --bs-card-spacer-x: 5%;
+    border-radius: 15px;
+    width: 96%;
+    cursor: pointer;
+}
+.card-active{
+    transition: all 0.2s;
+}
+.card-active:hover{
+    transform: scale(1.1);
+}
+.card{
+    transition: all 0.2s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.row {
+    --bs-gutter-x: 0;
+}
+.txt-active{    
+    display: block;
+    max-height: 2.3rem;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: -0.3px;
+}
+.txt{
+    display: block;
+    max-height: 2.3rem;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    letter-spacing: -0.3px;
+    color:var(--txt-clr);  
+}
+.mt-4{
+    margin-top: 13.6% !important;
+}
+.rgt{
+    position: relative;
+    cursor: pointer;
+    margin: 0 17px;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+}
+.ar{
+    position: absolute;
+    right: -15px;
+    top: -27px;
+}
+.up{
+    font-size: 1.6rem;
+    position: relative;
+    cursor: pointer;
+    margin: 0 17px;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -2px;
+}
+.arr2{
+    position: absolute;
+    right: -22px;
+    top: -32px;
+    color: var(--up-ar); 
+}
